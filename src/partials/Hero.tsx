@@ -10,20 +10,28 @@ const Hero = () => (
     <HeroAvatar
       title={
         <>
-          Hi there, I'm <GradientText>Ixartz</GradientText> 👋
+          Hi there, I'm <GradientText>Raimir Alvarez</GradientText> 👋
         </>
       }
       description={
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            malesuada
-          </a>{' '}
-          nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            consectetur
-          </a>{' '}
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          <p className="text-xl">
+            Driven and detail-oriented{' '}
+            <GradientText>Software Engineer</GradientText> with nearly two years
+            of hands-on experience in full stack web application development.
+            Adept at translating complex requirements into scalable, robust, and
+            user-friendly solutions. I bring a passion for cutting-edge
+            technologies and a proven track record of delivering{' '}
+            <GradientText>high-quality</GradientText> software.
+          </p>
+          <p className="mt-4 text-xl">
+            I am also a <GradientText>lifelong learner</GradientText> and a{' '}
+            <GradientText>problem solver</GradientText> who is always looking
+            for new challenges. Please add me in either{' '}
+            <GradientText>Facebook</GradientText> or{' '}
+            <GradientText>LinkedIn </GradientText>
+            so we can network and share ideas.
+          </p>
         </>
       }
       avatar={
@@ -36,28 +44,16 @@ const Hero = () => (
       }
       socialButtons={
         <>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/twitter-icon.png"
-              alt="Twitter icon"
-            />
-          </a>
-          <a href="/">
+          <a href="https://www.facebook.com/raimir.alvarez.96">
             <HeroSocial
               src="/assets/images/facebook-icon.png"
               alt="Facebook icon"
             />
           </a>
-          <a href="/">
+          <a href="https://www.linkedin.com/in/raimir-alvarez-b2232521b/">
             <HeroSocial
               src="/assets/images/linkedin-icon.png"
               alt="Linkedin icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/youtube-icon.png"
-              alt="Youtube icon"
             />
           </a>
         </>
