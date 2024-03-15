@@ -24,4 +24,7 @@ export default defineConfig({
     robotsTxt(),
     astroImageTools,
   ],
+  server: {
+    port: 3050,
+  },
 });

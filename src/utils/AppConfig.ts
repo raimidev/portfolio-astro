@@ -5,4 +5,5 @@ export const AppConfig = {
   author: 'Raimir Alvarez',
   locale_region: 'en-us',
   locale: 'en',
+  github_username: 'raimidev',
 };

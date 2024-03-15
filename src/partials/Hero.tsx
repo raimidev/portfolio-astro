@@ -5,6 +5,8 @@ import {
   Section,
 } from 'astro-boilerplate-components';
 
+import { DownloadButton } from '@/partials/DownloadButton';
+
 const Hero = () => (
   <Section>
     <HeroAvatar
@@ -30,7 +32,16 @@ const Hero = () => (
             for new challenges. Please add me in either{' '}
             <GradientText>Facebook</GradientText> or{' '}
             <GradientText>LinkedIn </GradientText>
-            so we can network and share ideas.
+            so we can network and share ideas. Or you can also check my{' '}
+            <GradientText>GitHub</GradientText> profile to see my latest
+            projects.
+          </p>
+          <p className="mt-4 text-xl">
+            You can also download my resume by clicking{' '}
+            <DownloadButton
+              text={'here'}
+              href={'/assets/images/github-mark.png'}
+            />
           </p>
         </>
       }
@@ -44,6 +55,14 @@ const Hero = () => (
       }
       socialButtons={
         <>
+          <a href="https://github.com/raimidev">
+            <div className="rounded-full bg-white">
+              <HeroSocial
+                src="/assets/images/github-mark.png"
+                alt="GitHub icon"
+              />
+            </div>
+          </a>
           <a href="https://www.facebook.com/raimir.alvarez.96">
             <HeroSocial
               src="/assets/images/facebook-icon.png"

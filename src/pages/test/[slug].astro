@@ -1,0 +1,30 @@
+---
+import type {IFrontmatter} from 'astro-boilerplate-components';
+
+import {CTA} from '@/partials/CTA';
+import {Hero} from '@/partials/Hero';
+import {ProjectList} from '@/partials/ProjectList';
+import {RecentPosts} from '@/partials/RecentPosts';
+import {Sponsors} from '@/partials/Sponsors';
+import Base from '@/templates/Base.astro';
+import {AppConfig} from '@/utils/AppConfig';
+import {sortByDate} from '@/utils/Posts';
+import {GetStaticPaths} from 'astro';
+import {
+  BlogGallery,
+  NewerOlderPagination,
+  PaginationHeader,
+  Section,
+} from 'astro-boilerplate-components';
+
+export async function getStaticPaths({paginate}: GetStaticPaths) {
+  return [{params: {slug: 'test1'}},{params: {slug: 'test2'}},{params: {slug: 'test3'}}];
+}
+const {slug} = Astro.params;
+---
+
+<Base head={{title: "Testing", description: "Testing Astro"}}>
+    <Section>
+      <div>Good test, {slug}</div>
+    </Section>
+</Base>
